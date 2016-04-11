@@ -630,7 +630,7 @@ class Nmcli(object):
             cmd.append('ipv6.dns')
             cmd.append(self.dns6)
         if self.autoconnect is not None:
-            cmd.append('autoconnect')
+            cmd.append('connection.autoconnect')
             cmd.append(self.autoconnect)
             # Can't use MTU with team
         return cmd
